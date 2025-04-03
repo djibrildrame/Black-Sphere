@@ -1,0 +1,89 @@
+/* Header pour chaque page*/
+
+body{
+    color: white;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.logo {
+  height: 220px;
+  margin-left: 40%;
+  width: 234px;
+}
+
+.tete{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rubrique {
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  margin-left: 10%;
+  gap: 56px;
+}
+.hoverrub:hover{
+   color: #C5A643;
+}
+
+.user{
+    font-size: 42px;
+   color: #C5A643;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: #000;
+    color: #C5A643;
+    padding: 40px 20px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-top: 60px;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .footer-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .footer-text {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+  }
+  
+  .footer-socials {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #C5A643;
+    transform: scale(1.2);
+  }
+  
+  .footer-bottom {
+    font-size: 14px;
+    color: #aaa;
+  }
+  

@@ -1,0 +1,73 @@
+.logoblack{
+    height: 30%;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 2%;
+
+}
+
+
+
+.champ{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 20px;
+    margin-left: 38%;
+}
+
+/* Style des inputs et textarea */
+.champ input[type="text"] {
+  padding: 15px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-color: white;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 0px #FFD700;
+}
+
+#nom  {
+    height: 35px;
+}
+#mail  {
+    height: 35px;
+}
+#descriptif  {
+    height: 35px;
+}
+
+/* Animation d'entrée depuis la gauche */
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+
+.accroche {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    animation: slideInLeft 1s ease-out forwards;
+    opacity: 0; /* au cas où l’animation n’a pas encore démarré */
+}
+
+.champ > input::placeholder {
+
+    font-size: 15px;
+}
+
+.submit {
+    height: 55px;
+    background-color: green;
+    border-radius: 10px;
+    font-size: 16px;
+}
+

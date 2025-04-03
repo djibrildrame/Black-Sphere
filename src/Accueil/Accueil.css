@@ -1,0 +1,312 @@
+body{
+    background-color: black;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.logo{
+    width: 180px;
+    margin-left: 2%;
+}
+
+
+
+/* === SLIDER GLOBAL === */
+
+.entrepreneur{
+text-align: center;
+font-size: 35px;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  
+  /* === CONTENEUR RESPONSIVE (16:9) === */
+  .slider-content {
+    position: relative;
+    width: 95%;
+    height: 550px;
+    margin-left: 2%;
+  }
+  
+  /* === IMAGES === */
+  .slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        /* Remplir sans déformer */
+    object-position: center;  /* Centrage */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 0;
+  }
+  
+  .slider-image.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  /* === FLÈCHES === */
+  .slider-arrows {
+    
+    position: absolute;
+    top: 43%;
+    width: 100%;
+    padding: 0 20px;
+    transform: translateY(-51%);
+    display: flex;
+    justify-content: space-around;
+    gap: 72%;
+    z-index: 2;
+  }
+  
+  .arrow {
+    cursor: pointer;
+    font-size: 3rem;
+    color: #C5A643;
+    transition: color 0.3s;
+  }
+
+  .arrow-right{
+    margin-right: 3%;
+  }
+  
+  .arrow:hover {
+    color: #fff;
+  }
+
+
+
+  
+  /* === BULLETS === */
+.slider-bullets {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 3;
+  }
+  
+  .bullet {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #555;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .bullet.active {
+    background-color: #C5A643;
+    transform: scale(1.2);
+  }  
+
+  /* CARDS */
+
+  .quatres{
+  
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+
+  }
+
+  .profile-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1200px;
+  }
+  
+  .profile-card {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  
+  .profile-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    color: #C5A643;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s ease;
+    text-align: center;
+  }
+  
+  .profile-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .overlay p {
+    font-size: 15px;
+    color: #fff;
+  }
+  
+  .plus{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+
+  }
+
+  a{
+    text-decoration: none;
+
+  }
+
+  /*Entreprise pour rejoindre */
+
+  .cta-entrepreneur {
+    background-color: #000;
+    color: #C5A643;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 1px solid #C5A643;
+  }
+  
+  .cta-entrepreneur h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .cta-entrepreneur p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 2px solid #C5A643;
+    color: #C5A643;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #C5A643;
+    color: #000;
+    box-shadow: 0 0 10px #C5A643;
+  }
+  
+  /* Motherlaid */
+
+  .motherland{
+    text-align: center;
+  }
+
+  .titlehomme{
+    color: white;
+    font-size: 25px;
+  }
+
+
+  .lumumba {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 60px auto;
+    padding: 40px;
+    max-width: 1200px;
+    background-color: #0a0a0a;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+    color: #fff;
+  }
+  
+  .patrice {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    object-fit: cover;
+  }
+  
+  .lumumba p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: left;
+    color: #FFD700;
+    max-width: 55%;
+  }
+  
+
+.sankara {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 60px auto;
+    padding: 40px;
+    max-width: 1200px;
+    background-color: #0a0a0a;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+    color: #fff;
+}
+
+.sankara p {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: left;
+  color: #FFD700;
+  max-width: 55%;
+}
+
+/* part2*/
+
+.part2 {
+  text-align: center;
+}
