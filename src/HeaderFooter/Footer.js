@@ -25,10 +25,10 @@ const Footer = () => {
       </div>
 
       <div className="footer-socials">
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/black_sphere_pro?igsh=bmQ5djJ4MXR4Z2tj&utm_source=qr" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faInstagram} className="social-icon" />
         </a>
-        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.tiktok.com/@black_sphere?_t=ZN-8vVEuWRZ21u&_r=1" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faTiktok} className="social-icon" />
         </a>
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -37,16 +37,16 @@ const Footer = () => {
         <a href="https://x.com" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faXTwitter} className="social-icon" />
         </a>
-        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://youtube.com/@blacksphereoff?si=Q0JSJCLBXr6y4ECh" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faYoutube} className="social-icon" />
         </a>
-        <a href="https://spotify.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://open.spotify.com/show/39wvDdZodHT93jZoAINqt5" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faSpotify} className="social-icon" />
         </a>
         <a href="https://snapchat.com" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faSnapchatGhost} className="social-icon" />
         </a>
-        <a href="https://telegram.org" target="_blank" rel="noopener noreferrer">
+        <a href="https://snapchat.com/t/7sl9jY0z" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faTelegram} className="social-icon" />
         </a>
         <a href="mailto:Problacksphere@gmail.com">

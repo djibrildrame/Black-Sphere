@@ -3,11 +3,12 @@ import "../Accueil/Accueil.css";
 import lumumba from "../img/Lumumba.jpg";
 import Sankara from "../img/Sankara.jpg";
 import Mansa from "../img/Mansa.jpg";
+import principalmovie from "../img/principal.mov";
 
 const Motherland = () => {
   return (
     <div>
-       <h1 className="motherland">Nos inspirations</h1>
+       <h1 className="motherland">NOS INSPIRATIONS</h1>
     <div className="inspiration">
      
     <div className="lumumba"> 
@@ -40,7 +41,24 @@ const Motherland = () => {
 
     </div>
 
-    <h1 className='part2'>Motherland</h1>
+<div>
+   
+    <div className="video-concept">
+    <h1 className='part2'>🎥 BLACK SPHERE EN 1 MINUTE</h1>
+  <h2>Comprendre Black Sphere</h2>
+  <p>Un projet qui valorise les entrepreneurs de la communauté noire, à travers la solidarité, la visibilité et l’inspiration.</p>
+  
+  <div className="video-wrapper">
+    <video controls autoPlay muted>
+      <source src={principalmovie} type="video/mp4" />
+      Votre navigateur ne supporte pas la vidéo HTML5.
+    </video>
+  </div>
+</div>
+
+</div>
+
+
     </div>
   )
 }

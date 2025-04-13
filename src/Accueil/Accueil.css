@@ -1,6 +1,7 @@
 body{
     background-color: black;
     font-family: "Helvetica", "Arial", sans-serif;
+
 }
 
 .logo{
@@ -186,12 +187,12 @@ font-size: 35px;
     color: #fff;
   }
   
-  .plus{
+  .plus {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
-
-  }
+    margin-top: -2%;
+}
 
   a{
     text-decoration: none;
@@ -238,10 +239,11 @@ font-size: 35px;
     box-shadow: 0 0 10px #C5A643;
   }
   
-  /* Motherlaid */
+  /* homme inspirant */
 
   .motherland{
     text-align: center;
+    margin-top: 4%;
   }
 
   .titlehomme{
@@ -305,8 +307,48 @@ font-size: 35px;
   max-width: 55%;
 }
 
-/* part2*/
+/* video */
 
 .part2 {
   text-align: center;
+  color: white;
+}
+
+.video-concept {
+  background-color: #0a0a0a;
+  text-align: center;
+  color: #FFD700;
+  gap: 40px;
+  margin: 60px auto;
+  padding: 40px;
+  max-width: 1200px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+  color: #fff;
+}
+
+.video-concept h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.video-concept p {
+  color: #fff;
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.video-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
 }
